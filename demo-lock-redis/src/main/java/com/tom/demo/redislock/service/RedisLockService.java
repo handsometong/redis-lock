@@ -21,7 +21,7 @@ public class RedisLockService {
 		}
 	}
 
-	@RedisAction("'iot:dev:'.concat(#user.id)")
+	@RedisAction("'test'.concat(#user.id)")
 	public void update(UserVO user){
 		try {
 			Thread.sleep(5000);
